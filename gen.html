@@ -1,21 +1,83 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>IPTV Token Viewer</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Token Generator</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #111;
+      color: #eee;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      padding: 1rem;
+    }
+
+    h1 {
+      margin-bottom: 1rem;
+      font-size: 1.8rem;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #444;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+
+    button:hover {
+      background-color: #666;
+    }
+
+    .usage {
+      margin-top: 1.5rem;
+      font-size: 1.2rem;
+      color: #00ff88;
+      word-break: break-all;
+    }
+
+    .error {
+      color: #ff4c4c;
+      margin-top: 1rem;
+    }
+  </style>
 </head>
 <body>
-  <h1>Latest Token Info</h1>
-  <pre id="tokenOutput">Fetching...</pre>
+  <h1>🎟️ IPTV Token Generator</h1>
+  <button onclick="generateToken()">Generate Token</button>
+
+  <div id="output" class="usage"></div>
+  <div id="error" class="error"></div>
 
   <script>
-    fetch('/api/token')
-      .then(res => res.json())
-      .then(data => {
-        document.getElementById('tokenOutput').textContent = JSON.stringify(data, null, 2);
-      })
-      .catch(err => {
-        document.getElementById('tokenOutput').textContent = 'Failed to load token.';
-      });
+    async function generateToken() {
+      document.getElementById("output").textContent = "Generating...";
+      document.getElementById("error").textContent = "";
+
+      try {
+        const response = await fetch('/api/token');
+        if (!response.ok) throw new Error("Token request failed");
+        const data = await response.json();
+        
+        if (data.usage) {
+          document.getElementById("output").textContent = data.usage;
+        } else {
+          throw new Error("No usage data returned");
+        }
+      } catch (err) {
+        document.getElementById("output").textContent = "";
+        document.getElementById("error").textContent = "❌ " + err.message;
+      }
+    }
   </script>
 </body>
 </html>
