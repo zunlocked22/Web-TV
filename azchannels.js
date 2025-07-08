@@ -100,6 +100,15 @@
         logo: 'https://github.com/tv-logo/tv-logos/blob/main/countries/philippines/tap-action-flix-ph.png?raw=true'
       },
 
+      tapmovies: {
+        name: 'Tap Movies',
+        type: 'clearkey',
+        manifestUri: 'https://qp-pldt-live-grp-06-prod.akamaized.net/out/u/cg_tapmovies_hd1.mpd',
+        keyId: '71cbdf02b595468bb77398222e1ade09',
+        key: 'c3f2aa420b8908ab8761571c01899460',
+        logo: 'https://cms.cignal.tv/Upload/Images/Tap-movies.jpg'
+      },
+
       animexhidive: {
         name: 'Anime X Hidive',
         type: 'hls',
@@ -134,12 +143,13 @@
         logo: 'https://www.pinpng.com/pngs/m/418-4182937_disney-junior-tv-logo-hd-png-download.png'
       },
 
-      crunchyroll: {
-        name: 'Crunchyroll',
+      animeallday: {
+        name: 'Anime All Day',
         type: 'hls',
-        manifestUri: 'https://stitcher.pluto.tv/stitch/hls/channel/65652f7fc0fc88000883537a/master.m3u8?deviceType=web&servertSideAds=false&deviceMake=safari&deviceVersion=1&deviceId=spencer&appVersion=1&deviceDNT=0&deviceModel=web&sid=6780419e-1ba9-11f0-a1fd-4e04716c5414',
-        logo: 'https://logos-world.net/wp-content/uploads/2021/02/Crunchyroll-Logo-2012-present.jpg'
+        manifestUri: 'https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5812b7d3249444e05d09cc49/master.m3u8?advertisingId=&appName=web&appStoreUrl=&appVersion=DNT&app_name=&architecture=&buildVersion=&deviceDNT=0&deviceId=5812b7d3249444e05d09cc49&deviceLat=&deviceLon=&deviceMake=web&deviceModel=web&deviceType=web&deviceVersion=DNT&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false&sid=830&terminate=false&userId=',
+        logo: 'https://yt3.googleusercontent.com/ytc/AOPolaSk8jLwTPTZ9tnSWr0coUk1-VJLYQCi2muftdUyHw=s100-c-k-c0x00ffffff-no-rj'
       },
+
 
       tfcasia: {
         name: 'TFC Asia',
@@ -301,12 +311,6 @@
         logo: 'https://th.bing.com/th/id/R.743cd8b9fc154d6ae88ad250cbda5f5d?rik=pXna8%2bXXTgQNXQ&riu=http%3a%2f%2fvignette2.wikia.nocookie.net%2flogopedia%2fimages%2fc%2fcd%2fPBA_Rush_logo.png%2frevision%2flatest%3fcb%3d20161115101642&ehk=o2xvROtRxUDG9q%2beLGFUpfS2%2bcbtn%2fphEqWCsyPHnNM%3d&risl=&pid=ImgRaw&r=0'
       },
 
-      fxtubi: {
-        name: 'Fox Sports',
-        type: 'hls',
-        manifestUri: 'https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5a74b8e1e22a61737979c6bf/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=6c28f173-30d3-11ef-9cf5-e9ddff8ff496&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=46a3b8ff-5a4a-4952-bb4d-9461224acd54',
-        logo: 'https://images.seeklogo.com/logo-png/5/2/fox-sports-logo-png_seeklogo-57162.png?v=1956071233450768888'
-      },
 
       nbaph: {
         name: 'NBA TV PH',
