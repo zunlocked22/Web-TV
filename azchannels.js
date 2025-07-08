@@ -90,7 +90,6 @@
       },
 
 
-
       tapactionflix: {
         name: 'Tap Action Flix',
         type: 'clearkey',
@@ -114,15 +113,6 @@
         type: 'hls',
         manifestUri: 'https://amc-anime-x-hidive-1-us.tablo.wurl.tv/playlist.m3u8',
         logo: 'https://www.tablotv.com/wp-content/uploads/2023/12/AnimeXHIDIVE_official-768x499.png'
-      },
-
-      disneychannel: {
-        name: 'Disney Channel',
-        type: 'clearkey',
-        manifestUri: 'https://uselector.cdn.intigral-ott.net/DIS/DIS.isml/manifest.mpd',
-        keyId: '72800c62fcf2bfbedd9af27d79ed35d6',
-        key: 'b6ccb9facb2c1c81ebe4dfaab8a45195',
-        logo: 'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/20768ccf-f5b0-4b5e-bd31-ad33d6cf6a35/dei91io-5b3a14cb-c0c8-4033-b487-3574252333bd.jpg/v1/fill/w_1191,h_671,q_70,strp/disney_channel_logo__blue__by_littlekj20_dei91io-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzMwIiwicGF0aCI6IlwvZlwvMjA3NjhjY2YtZjViMC00YjVlLWJkMzEtYWQzM2Q2Y2Y2YTM1XC9kZWk5MWlvLTViM2ExNGNiLWMwYzgtNDAzMy1iNDg3LTM1NzQyNTIzMzNiZC5qcGciLCJ3aWR0aCI6Ijw9MTI5NiJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.CDhwbyrZ7hWQVXvarfBL8eDRzfm1mjqVps1IqVo2j3g'
       },
 
       disneyxdd: {
@@ -277,10 +267,8 @@
 
       tvnpinoy: {
         name: 'TVN Movies Pinoy',
-        type: 'clearkey',
-        manifestUri: 'https://qp-pldt-live-grp-07-prod.akamaized.net/out/u/cg_tvnmovie.mpd',
-        keyId: '2e53f8d8a5e94bca8f9a1e16ce67df33',
-        key: '3471b2464b5c7b033a03bb8307d9fa35',
+        type: 'hls',
+        manifestUri: 'https://kaotv.ganbaruby23.xyz/tvnmoviespinoy.php',
         logo: 'https://th.bing.com/th/id/OIP.7i_NEUaiqj2UtFHiHjzzhgHaF0?r=0&rs=1&pid=ImgDetMain'
       },
 
