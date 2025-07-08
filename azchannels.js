@@ -267,11 +267,12 @@
 
       tvnpinoy: {
         name: 'TVN Movies Pinoy',
-        type: 'hls',
-        manifestUri: 'https://kaotv.ganbaruby23.xyz/tvnmoviespinoy.php',
+        type: 'clearkey',
+        manifestUri: 'https://qp-pldt-live-grp-07-prod.akamaized.net/out/u/cg_tvnmovie.mpd',
+        keyId: '2e53f8d8a5e94bca8f9a1e16ce67df33',
+        key: '3471b2464b5c7b033a03bb8307d9fa35',
         logo: 'https://th.bing.com/th/id/OIP.7i_NEUaiqj2UtFHiHjzzhgHaF0?r=0&rs=1&pid=ImgDetMain'
       },
-
 
       wwe: {
         name: 'WWE',
@@ -280,6 +281,15 @@
         keyId: '00208c93f4358213b52220898b962385',
         key: '8ae6063167228e350dd132d4a1573102',
         logo: 'https://mcdn.wallpapersafari.com/medium/43/73/OC5BrI.png'
+      },
+
+      bsport: {
+        name: 'Bein Sports 1',
+        type: 'clearkey',
+        manifestUri: 'http://linearjitp-playback.astro.com.my/dash-wv/linear/408/default_ott.mpd',
+        keyId: '1a655189ab5c49eb235308c2b1a9e710',
+        key: '3c4508af348844107f5e026a4fd6b16e',
+        logo: 'https://logo.iptveditor.com/beinsports.png'
       },
 
       onesports: {
