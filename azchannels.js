@@ -283,14 +283,6 @@
         logo: 'https://mcdn.wallpapersafari.com/medium/43/73/OC5BrI.png'
       },
 
-      bsport: {
-        name: 'Bein Sports 1',
-        type: 'clearkey',
-        manifestUri: 'http://linearjitp-playback.astro.com.my/dash-wv/linear/408/default_ott.mpd',
-        keyId: '1a655189ab5c49eb235308c2b1a9e710',
-        key: '3c4508af348844107f5e026a4fd6b16e',
-        logo: 'https://logo.iptveditor.com/beinsports.png'
-      },
 
       onesports: {
         name: 'One Sports +',
