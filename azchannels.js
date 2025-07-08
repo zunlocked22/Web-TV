@@ -511,7 +511,7 @@
 
     };
 
-    let currentChannelKey = 'cnn'; // Set default channel (you can change it to any other channel key)
+    let currentChannelKey = 'animax'; // Set default channel (you can change it to any other channel key)
 
     function renderChannelButtons(filter = '') {
   const list = document.getElementById('channelList');
