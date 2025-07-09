@@ -90,24 +90,6 @@
       },
 
 
-      tapactionflix: {
-        name: 'Tap Action Flix',
-        type: 'clearkey',
-        manifestUri: 'https://qp-pldt-live-grp-06-prod.akamaized.net/out/u/cg_tapactionflix_hd1.mpd',
-        keyId: 'bee1066160c0424696d9bf99ca0645e3',
-        key: 'f5b72bf3b89b9848de5616f37de040b7',
-        logo: 'https://github.com/tv-logo/tv-logos/blob/main/countries/philippines/tap-action-flix-ph.png?raw=true'
-      },
-
-      tapmovies: {
-        name: 'Tap Movies',
-        type: 'clearkey',
-        manifestUri: 'https://qp-pldt-live-grp-06-prod.akamaized.net/out/u/cg_tapmovies_hd1.mpd',
-        keyId: '71cbdf02b595468bb77398222e1ade09',
-        key: 'c3f2aa420b8908ab8761571c01899460',
-        logo: 'https://cms.cignal.tv/Upload/Images/Tap-movies.jpg'
-      },
-
       animexhidive: {
         name: 'Anime X Hidive',
         type: 'hls',
@@ -147,6 +129,24 @@
         keyId: '955574ee2b674f0fbbad818fb384c233',
         key: '51d2893619bdd062fb4c0cdaafefbf27',
         logo: 'https://1000logos.net/wp-content/uploads/2023/10/Cartoonito-Logo.jpg'
+      },
+
+        tapactionflix: {
+        name: 'Tap Action Flix',
+        type: 'clearkey',
+        manifestUri: 'https://qp-pldt-live-grp-06-prod.akamaized.net/out/u/cg_tapactionflix_hd1.mpd',
+        keyId: 'bee1066160c0424696d9bf99ca0645e3',
+        key: 'f5b72bf3b89b9848de5616f37de040b7',
+        logo: 'https://github.com/tv-logo/tv-logos/blob/main/countries/philippines/tap-action-flix-ph.png?raw=true'
+      },
+
+      tapmovies: {
+        name: 'Tap Movies',
+        type: 'clearkey',
+        manifestUri: 'https://qp-pldt-live-grp-06-prod.akamaized.net/out/u/cg_tapmovies_hd1.mpd',
+        keyId: '71cbdf02b595468bb77398222e1ade09',
+        key: 'c3f2aa420b8908ab8761571c01899460',
+        logo: 'https://cms.cignal.tv/Upload/Images/Tap-movies.jpg'
       },
 
 
