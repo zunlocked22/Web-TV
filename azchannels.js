@@ -140,11 +140,13 @@
         logo: 'https://www.pinpng.com/pngs/m/418-4182937_disney-junior-tv-logo-hd-png-download.png'
       },
 
-      animeallday: {
-        name: 'Anime All Day',
-        type: 'hls',
-        manifestUri: 'https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5812b7d3249444e05d09cc49/master.m3u8?advertisingId=&appName=web&appStoreUrl=&appVersion=DNT&app_name=&architecture=&buildVersion=&deviceDNT=0&deviceId=5812b7d3249444e05d09cc49&deviceLat=&deviceLon=&deviceMake=web&deviceModel=web&deviceType=web&deviceVersion=DNT&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false&sid=830&terminate=false&userId=',
-        logo: 'https://yt3.googleusercontent.com/ytc/AOPolaSk8jLwTPTZ9tnSWr0coUk1-VJLYQCi2muftdUyHw=s100-c-k-c0x00ffffff-no-rj'
+      cartoonitoasia: {
+        name: 'Cartoonito Asia',
+        type: 'clearkey',
+        manifestUri: 'https://atemecdnbalancer-voe.sysln.id/live/eds/CartoonitoHD/mpd/CartoonitoHD.mpd',
+        keyId: '955574ee2b674f0fbbad818fb384c233',
+        key: '51d2893619bdd062fb4c0cdaafefbf27',
+        logo: 'https://1000logos.net/wp-content/uploads/2023/10/Cartoonito-Logo.jpg'
       },
 
 
@@ -155,6 +157,24 @@
         keyId: '9568cc84e1d944f38eac304517eab6fd',
         key: 'f12142af8f39b3bab79d3679d3665ebe',
         logo: 'https://img.mytfc.com/cmsroot/abscms/media/mytfctv/channels/iwantoriginals/iwanttfc_channel_thumbnail-768x430.png?ext=.png'
+      },
+
+       tapsports: {
+        name: 'Tap Sports',
+        type: 'clearkey',
+        manifestUri: 'https://qp-pldt-live-grp-11-prod.akamaized.net/out/u/dr_tapsports.mpd',
+        keyId: 'eabd2d95c89e42f2b0b0b40ce4179ea0',
+        key: '0e7e35a07e2c12822316c0dc4873903f',
+        logo: 'https://th.bing.com/th/id/R.de88f2744075062e6a5cc5149b63099c?rik=AJqSoOs%2febtQUQ&riu=http%3a%2f%2fwww.tapdmv.com%2flogo-tapSPORTS.png&ehk=bCoa3Bqqv4LEsTVkvVH6xIKKUHMLeEZmeugBvJ5kkRQ%3d&risl=&pid=ImgRaw&r=0'
+      },
+
+      bbbcnews: {
+        name: 'BBC News',
+        type: 'clearkey',
+        manifestUri: 'https://atemeshield1-voe.sysln.id/live/eds/BBCWorldNewsHD/mpd/BBCWorldNewsHD.mpd',
+        keyId: '975ef0f16ca94eee8aa5c3a6ff9149e7',
+        key: '2b69f4bdc9e4aa4f6ec03220b0c89dd1',
+        logo: 'https://logos-world.net/wp-content/uploads/2024/12/BBC-News-Logo.jpg'
       },
 
       cnn: {
