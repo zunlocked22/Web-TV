@@ -115,6 +115,13 @@
         logo: 'https://www.tablotv.com/wp-content/uploads/2023/12/AnimeXHIDIVE_official-768x499.png'
       },
 
+      animex: {
+        name: 'Animex',
+        type: 'hls',
+        manifestUri: 'https://live20.bozztv.com/giatv/giatv-animex/animex/playlist.m3u8',
+        logo: 'https://the-bithub.com/animex'
+      },
+
       disneyxdd: {
         name: 'Disney XD',
         type: 'clearkey',
@@ -184,6 +191,20 @@
         keyId: 'd39eb201ae494a0b98583df4d110e8dd',
         key: '6797066880d344422abd3f5eda41f45f',
         logo: 'https://logowik.com/content/uploads/images/one-news9489.jpg'
+      },
+
+      sinemanila: {
+        name: 'SineManila',
+        type: 'hls',
+        manifestUri: 'https://live20.bozztv.com/giatv/giatv-sinemanila/sinemanila/playlist.m3u8',
+        logo: 'https://the-bithub.com/SineManila'
+      },
+
+      ragetv: {
+        name: 'Rage TV',
+        type: 'hls',
+        manifestUri: 'https://live20.bozztv.com/giatv/giatv-ragetv/ragetv/playlist.m3u8',
+        logo: 'https://the-bithub.com/ragetv'
       },
 
     
@@ -497,6 +518,15 @@
         keyId: '002046c9a49b9ab1cdb6616bec5d26c3',
         key: 'd2f92f6b7edc9a1a05d393ba0c20ef9e',
         logo: 'https://logos-world.net/wp-content/uploads/2023/02/Premier-League-Logo-2007.png'
+      },
+
+      nflchannel: {
+        name: 'NFL Channel',
+        type: 'clearkey',
+        manifestUri: 'https://fsly.stream.peacocktv.com/Content/CMAF_CTR-4s-v2/Live/channel(lc107a1ddy)/master.mpd',
+        keyId: '002007110c69a23803173b50eab05f23',
+        key: '590d6e8f4ca81319f9bb29104f571990',
+        logo: 'https://1000logos.net/wp-content/uploads/2017/05/NFL-Logo-1.jpg'
       },
 
       mtvlive: {
