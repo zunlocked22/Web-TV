@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AZ TV</title>
+    <link rel="icon" type="image/png" href="/static/logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(135deg, #000, #000),
+                        url('/static/background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .plans-container {
+            background: #000;
+            padding: 3rem 2rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        .logo {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #b74b4b;
+            margin-bottom: 1rem;
+        }
+
+        .tagline {
+            font-size: 1.2rem;
+            color: #ffffff;
+            margin-bottom: 1rem;
+            opacity: 0.9;
+        }
+
+        .subtitle {
+            font-size: 1rem;
+            color: #b0b0b0;
+            margin-bottom: 3rem;
+        }
+
+        .subtitle-large {
+            font-size: 1.3rem;
+            font-weight: 500;
+            color: #ddd;
+            margin-bottom: 2rem;
+        }
+
+        .plans-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .plan-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2rem 1.5rem;
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: transform 0.2s ease;
+        }
+
+        .plan-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .plan-card.free {
+            border-color: rgba(102, 102, 102, 0.3);
+        }
+
+        .plan-name {
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: #999;
+        }
+
+        .plan-price {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: white;
+        }
+
+        .plan-description {
+            font-size: 1rem;
+            color: #ccc;
+            margin-bottom: 1rem;
+            line-height: 1.5;
+        }
+
+        .btn {
+            background: #4CAF50;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: 600;
+            transition: background 0.2s ease;
+            border: none;
+            cursor: pointer;
+            display: inline-block;
+            width: 100%;
+        }
+
+        .btn:hover {
+            background: #45a049;
+        }
+
+        .btn-free {
+            background: #666;
+        }
+
+        .btn-free:hover {
+            background: #777;
+        }
+
+        .channels-section {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 2rem 1rem;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .channels-title {
+            text-align: center;
+            color: #b74b4b;
+            margin-bottom: 1.5rem;
+            font-size: 1.3rem;
+            font-weight: 600;
+        }
+
+        .channels-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .channel-logo {
+            width: 80px;
+            height: 80px;
+            border-radius: 10px;
+            object-fit: contain;
+            flex-shrink: 0;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .channel-logo:hover {
+            transform: scale(1.1);
+        }
+
+        .hero-section {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .logo-container {
+            margin-bottom: 1rem;
+            background-color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        .logo-image {
+            max-width: 150px;
+            height: auto;
+            border-radius: 10px;
+            display: block;
+        }
+
+        .main-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #b74b4b;
+            margin-bottom: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .plans-container {
+                padding: 2rem 1rem;
+            }
+
+            .logo {
+                font-size: 2.5rem;
+            }
+
+            .tagline {
+                font-size: 1.1rem;
+            }
+
+            .plans-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .plan-card {
+                padding: 1.5rem 1rem;
+            }
+
+            .btn {
+                width: 100%;
+            }
+
+            .channels-container {
+                gap: 1rem;
+            }
+
+            .channel-logo {
+                width: 60px;
+                height: 60px;
+            }
+        }
+
+        .main-header {
+            width: 100%;
+            background-color: #000;
+            padding: 10px 30px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 999;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .logo-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+        
+        .header-logo {
+            height: 40px;
+            width: auto;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+        
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+        }
+        
+        .nav-links a:hover {
+            color: #b74b4b;
+        }
+        
+        body {
+            padding-top: 70px; /* to prevent the fixed header from overlapping content */
+      }
+        
+
+
+    </style>
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo-nav">
+            <img src="logoaz.png" alt="AZ TV Logo" class="header-logo">
+            <nav class="nav-links">
+                <a href="home.html">Home</a>
+                <a href="AzTV.html">Live Channels</a>
+            </nav>
+        </div>
+    </header>
+
+
+
+    <div class="plans-container">
+        <div class="hero-section">
+            <div class="logo-container">
+                <img src="logoaz.png" alt="AZ TV Logo" class="logo-image">
+            </div>
+            <h1 class="main-title">AZ TV</h1>
+            <p class="tagline">Watch your favourite TV Programs on any Android Devices</p>
+        </div>
+
+        <div class="channels-section">
+            <div class="channels-title">Available Channels</div>
+            <div class="channels-container">
+                <img src="https://vignette.wikia.nocookie.net/russel/images/f/f9/TV5_Logo_2011.png/revision/latest?cb=20161204035016" alt="Channel Logo" class="channel-logo">
+                <img src="https://cms.cignal.tv/Upload/Images/Kapamilya%20Channel%20Logo%20alpha.png" alt="Channel Logo" class="channel-logo">
+                <img src="https://logospng.org/wp-content/uploads/hbo.png" alt="Channel Logo" class="channel-logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/HBO_Family_logo.png" alt="Channel Logo" class="channel-logo">
+                <img src="https://cms.cignal.tv/Upload/Images/HBO%20Hits-1.jpg" alt="Channel Logo" class="channel-logo">
+                <img src="https://www.nicepng.com/png/detail/233-2333069_hbo-signature-logo-png.png" alt="Channel Logo" class="channel-logo">
+                <img src="https://download.logo.wine/logo/Cinema_One/Cinema_One-Logo.wine.png" alt="Channel Logo" class="channel-logo">
+                <img src="https://logos-world.net/wp-content/uploads/2021/08/Cartoon-Network-Logo-2010-present.png" alt="Channel Logo" class="channel-logo">
+                <img src="https://iconape.com/wp-content/files/px/285466/svg/animax-logo-logo-icon-png-svg.png" alt="Channel Logo" class="channel-logo">
+                <img src="https://github.com/tv-logo/tv-logos/blob/main/countries/philippines/tap-action-flix-ph.png?raw=true" alt="Channel Logo" class="channel-logo">
+                <img src="https://logos-world.net/wp-content/uploads/2023/06/Disney-XD-Logo-2009.png" alt="Channel Logo" class="channel-logo">
+                <img src="https://www.tablotv.com/wp-content/uploads/2023/12/AnimeXHIDIVE_official-768x499.png" alt="Channel Logo" class="channel-logo">
+            </div>
+        </div>
+
+        <p class="subtitle subtitle-large">Do you want the channels for your Smart/Android TV or Android device?</p>
+
+        <div class="plans-grid">
+            <div class="plan-card free">
+                <div class="plan-description">₱?/Lifetime — as long as I'm developing it, this offer stands for the first few subscribers.</div>
+                <div class="plan-description">If you're interested in getting the channels on your Smart/Android TV, click the button below and I’ll guide you through the installation process.</div>
+                <a href="#" class="btn btn-free">Message me</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
