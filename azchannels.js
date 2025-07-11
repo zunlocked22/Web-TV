@@ -122,6 +122,15 @@
         logo: 'https://www.pinpng.com/pngs/m/418-4182937_disney-junior-tv-logo-hd-png-download.png'
       },
 
+      crunchy: {
+        name: 'Crunchyroll TV',
+        type: 'clearkey',
+        manifestUri: 'https://abea5ymaaaaaaaamk76536wuchgad.9574075e05d9448993c5435f80b4d406.emt.cf.ww.aiv-cdn.net/v1/dash/159325541587/imdb_wurl_amzn1_dv_live_csid_503026fe-77b5-47c6-a357-4b5fd3b3ac0b_us-west-2_pdx_dash_h264/live/clients/dash-sd/enc/kymirdzts0/out/v1/76b5ba51cc354d77bc8348e8f080a333/cenc-sd.mpd?aws.sessionId=0e737c07-e4d7-47ee-939f-ba14396dc812&amznDtid=AOAGZA014O5RE&encoding=segmentBase',
+        keyId: 'ce3d541877b4f866043ded81a542fa90',
+        key: '5677f45b84feb16792303b2baf83c9bd',
+        logo: 'https://logos-world.net/wp-content/uploads/2021/02/Crunchyroll-Logo-2012-present.jpg'
+      },
+
       cartoonitoasia: {
         name: 'Cartoonito Asia',
         type: 'clearkey',
