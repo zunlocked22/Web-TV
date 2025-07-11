@@ -122,13 +122,13 @@
         logo: 'https://www.pinpng.com/pngs/m/418-4182937_disney-junior-tv-logo-hd-png-download.png'
       },
 
-      nbaamz: {
-        name: 'NBA TV',
+      atwoz: {
+        name: 'A2Z',
         type: 'clearkey',
-        manifestUri: 'https://ottb.live.cf.ww.aiv-cdn.net/dub-nitro/live/clients/dash/enc/2jbycgm3g3/out/v1/066dd9325648468c9ecdc8b272370931/cenc.mpd',
-        keyId: '84077d18bcf234a42de3745be106a87f',
-        key: 'aee3069c062ec8ee6bfdd32985f287ef',
-        logo: 'https://cdn.nba.com/manage/2021/02/NBATV-logo-horizontal.jpg'
+        manifestUri: 'https://qp-pldt-live-grp-02-prod.akamaized.net/out/u/cg_a2z.mpd',
+        keyId: 'f703e4c8ec9041eeb5028ab4248fa094',
+        key: 'c22f2162e176eee6273a5d0b68d19530',
+        logo: 'https://the-bithub.com/a2z'
       },
 
       cartoonitoasia: {
